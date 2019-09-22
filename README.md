@@ -1,4 +1,4 @@
-# cornea
+# CoRNeA
 protein interface prediction method
 To calculate features for the test case, utilize the R codes provided in the repository
 1. Conditional mutual Infromation (CMI) for inter protein contacts  
