@@ -17,4 +17,8 @@ To calculate features for the test case, utilize the R codes provided in the rep
 7. Secondary structrue prediction: Use sspred.r to compute feature ssp. Requires pdf output of secondary structure prediction from PSIPRED server for both protein sequences (seq1.pdf, seq2.pdf). Output file: test_ssp.csv
 8. Environmental features : Use environmental features.r to compute the convolved environmental features. (kernel matrices: kernel_function_5.csv and kernel_function_3.csv). Call .csv of all 9 features calculated above (cmi.csv,cc.csv,cp.csv,cp1.csv,cp2.csv,hc.csv,rsa.csv,scm.rsa, ssp.csv). Output files: ecmi.csv, ecc.csv, ecp,csv, ecp1.csv, ecp2.csv, ehc.csv, ersa.csv, escm.csv, essp.csv)
 9. Compiling feature values as dataframe: use compiling features.r to create a dataframe for final model prediction using random forest. Final output: test_df.csv
-10. Computing interface prediction using random forest classifier: 
+10. Computing interface prediction using random forest classifier: Use python jupiter notebook testing.ipynb to test the dataset on the trained models (with kernel 3 or kernel 5 matrix). Output file: prediction_test.csv
+11. For post processing the results obtained from random forest classifier, calculate intra contacts using the file intra_contacts.r and rsa for individual proteins using rsa_intra.r
+12. Network analysis: use the file network_analysis.r to calculate the final residual network between proteinA and proteinB. Output fle: test_final_prediction.csv
+13. For generating final scores for the residue pairs predicted by CoRNeA, use prediction matrix convolution.r 
+    Output file: final_prediction_test.csv
