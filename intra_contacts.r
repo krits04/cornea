@@ -1,6 +1,7 @@
 library(seqinr)
 library(reshape2)
 library(scales)
+library(dplyr)
 f1<-read.fasta(file="test_a.fasta", seqtype= "AA", as.string= T, strip.desc= T)
 f2<-read.fasta(file="test_a.fasta", seqtype= "AA", as.string= T, strip.desc= T)
 attr<-getAnnot(f1)
