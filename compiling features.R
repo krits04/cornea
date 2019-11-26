@@ -1,21 +1,27 @@
 library(reshape2)
-cmi<-as.matrix(read.csv(file="test_cmi.csv", header = F))
+cmi<-as.matrix(read.csv(file="test_cmi.csv", header = T,row.names = 1 ))
 ecmi<-as.matrix(read.csv(file="test_ecmi.csv", header = T, row.names = 1))
-cc<-as.matrix(read.csv(file="test_cc.csv", header = F))
+cc<-as.matrix(read.csv(file="test_cc.csv", header = T))
+cc<-cc[,-1]
 ecc<-as.matrix(read.csv(file="test_ecc.csv", header = T, row.names = 1))
-cp<-as.matrix(read.csv(file="test_cp.csv", header = F))
+cp<-as.matrix(read.csv(file="test_cp.csv", header = T))
+cp<-cp[,-1]
 ecp<-as.matrix(read.csv(file="test_ecp.csv", header = T, row.names = 1))
-cp1<-as.matrix(read.csv(file="test_cp1.csv", header = F))
+cp1<-as.matrix(read.csv(file="test_cp1.csv", header = T))
+cp1<-cp1[,-1]
 ecp1<-as.matrix(read.csv(file="test_ecp1.csv", header = T, row.names = 1))
-cp2<-as.matrix(read.csv(file="test_cp2.csv", header = F))
+cp2<-as.matrix(read.csv(file="test_cp2.csv", header = T))
+cp2<-cp2[,-1]
 ecp2<-as.matrix(read.csv(file="test_ecp2.csv", header = T, row.names = 1))
-hcm<-as.matrix(read.csv(file="test_hc.csv", header = F))
+hcm<-as.matrix(read.csv(file="test_hc.csv", header = T))
+hcm<-hcm[,-1]
 ehcm<-as.matrix(read.csv(file="test_ehc.csv", header = T, row.names = 1))
-rsa<-as.matrix(read.csv(file="test_rsa.csv", header = F))
+rsa<-as.matrix(read.csv(file="test_rsa.csv", header = T, row.names = 1))
 ersa<-as.matrix(read.csv(file="test_ersa.csv", header = T, row.names = 1))
-scm<-as.matrix(read.csv(file="test_scm.csv", header = F))
+scm<-as.matrix(read.csv(file="test_scm.csv", header = T))
+scm<-scm[,-1]
 escm<-as.matrix(read.csv(file="test_escm.csv", header = T, row.names = 1))
-ssp<-as.matrix(read.csv(file="test_sspred.csv", header = F))
+ssp<-as.matrix(read.csv(file="test_sspred.csv", header = T, row.names = 1))
 essp<-as.matrix(read.csv(file="test_essp.csv", header = T, row.names = 1))
 cmi<-t(cmi)
 ecmi<-t(ecmi)
