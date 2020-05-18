@@ -1,4 +1,5 @@
 library(OpenImageR)
+library(reshpe2)
 x<-as.matrix(read.csv(file="kernel_function_3.csv", header = T, row.names = 1)) ##use kernel_function_5.csv in case using 5*5 matrix##
 image_matrix<-as.matrix(read.csv(file="test_cmi.csv", header = T))
 image_matrix<-image_matrix[,-1]
