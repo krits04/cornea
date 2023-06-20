@@ -2,7 +2,7 @@
 protein interface prediction method
 To calculate features for the test case, utilize the R codes provided in the repository
 1. Conditional mutual Infromation (CMI) for inter protein contacts  
-  Use cmi_processing.r to compute the CMI valus of inter protein contacts; cmi. Requires edited alignment files (a.fasta and b.fasta) as input. Calls conditional mutual information for new CMI algorithm mentioned in detail method. Output file: test_cmi.csv
+  Use cmi_processing.r to compute the CMI valus of inter protein contacts; cmi. Requires edited alignment files (a.fasta and b.fasta) as input. Calls conditional mutual information for new CMI algorithm mentioned in detail method. Output file: test_cmi.csv             Special Note: the edited alignment file should contain the first sequence as the test sequence (same sequence for all the other features). The alignment should be edited in a way that there are no gaps in the first sequence. Only then p1, p2 and p will correspond to the length of protein A, length of protein B and combined length of protein A and B. 
 2. Charge compatibility(CC): Use charge_compatibility.r to compute feature cc. Requires single fasta file with both the protein sequences (test.fasta). Calls charge compatibility.csv to fill in values for residue pairs. Output file: test_cc.csv
 3. Contact Potentials (CP, CP1, CP2):
   a. CP: Use mj_original to compute feature cp. Requires single fasta file with both the protein sequences (test.fasta). Calls       
