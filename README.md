@@ -12,7 +12,7 @@ To calculate features for the test case, utilize the R codes provided in the rep
   c. CP2: Use mj_buried to compute feature cp. Requires single fasta file with both the protein sequences (test.fasta). Calls       
          mj_buried.csv to fill in values for residue pairs. Output file: test_cp2.csv
 4. Hydropathy compatibility (HCM):Use hydropathy_compatibility.r to compute feature hc. Requires single fasta file with both the protein sequences (test.fasta). Calls hydropathy compatibility.csv to fill in values for residue pairs. Output file: test_hc.csv
-5. Relative Solvent Accessibility: Use rsa.r to compute feature rsa. Requires pdf output of RSA from SPIDER2 or SPIDER3 server for both protein sequences (test1.pdf, test2.pdf). Output file: test_rsa.csv
+5. Relative Solvent Accessibility: Use rsa.r to compute feature rsa. Requires pdf output of RSA from SPIDER2 or SPIDER3 server for both protein sequences (test1.pdf, test2.pdf). Output file: test_rsa.csv ** SPIDER2/3 is not being maintianed. Please use WESA instead**
 6. Size compatibility (SCM): Use size_compatibility.r to compute feature scm. Requires single fasta file with both the protein sequences (test.fasta). Calls size compatibility.csv to fill in values for residue pairs. Output file: test_scm.csv
 7. Secondary structrue prediction: Use sspred.r to compute feature ssp. Requires pdf output of secondary structure prediction from PSIPRED server for both protein sequences (seq1.pdf, seq2.pdf). Output file: test_ssp.csv
 8. Environmental features : Use environmental features.r to compute the convolved environmental features. (kernel matrices: kernel_function_5.csv and kernel_function_3.csv). Call .csv of all 9 features calculated above (cmi.csv,cc.csv,cp.csv,cp1.csv,cp2.csv,hc.csv,rsa.csv,scm.rsa, ssp.csv). Output files: ecmi.csv, ecc.csv, ecp,csv, ecp1.csv, ecp2.csv, ehc.csv, ersa.csv, escm.csv, essp.csv)
@@ -22,3 +22,4 @@ To calculate features for the test case, utilize the R codes provided in the rep
 12. Network analysis: use the file network_analysis.r to calculate the final residual network between proteinA and proteinB. Output fle: test_final_prediction.csv
 13. For generating final scores for the residue pairs predicted by CoRNeA, use prediction matrix convolution.r 
     Output file: final_prediction_test.csv
+PS: In case of any issues with the code please leave an email at ai.cornea02@gmail.com
