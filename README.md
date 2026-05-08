@@ -22,4 +22,37 @@ To calculate features for the test case, utilize the R codes provided in the rep
 12. Network analysis: use the file network_analysis.r to calculate the final residual network between proteinA and proteinB. Output fle: test_final_prediction.csv
 13. For generating final scores for the residue pairs predicted by CoRNeA, use prediction matrix convolution.r 
     Output file: final_prediction_test.csv
-PS: In case of any issues with the code please leave an email at ai.cornea02@gmail.com
+PS: In case of any issues with the code please leave an email at ai.cornea02@gmail.com, krits04@gmail.com
+
+# CoRNeA
+
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+[![DOI](https://img.shields.io/badge/DOI-10.3390%2Fbiom10060938-blue)](https://doi.org/10.3390/biom10060938)
+
+**Co-evolution, Random Forest, and Network Analysis pipeline for predicting eukaryotic protein-protein interaction interfaces from amino acid sequence information.**
+
+---
+
+## Citation
+
+If you use CoRNeA, any of its components (feature extraction modules, environmental feature convolution, conditional mutual information algorithm, network analysis pipeline), or any derivative work based on this codebase, please cite:
+
+> Chopra, K., Burdak, B., Sharma, K., Kembhavi, A., Mande, S.C., Chauhan, R. (2020). CoRNeA: A Pipeline to Decrypt the Inter-Protein Interfaces from Amino Acid Sequence Information. *Biomolecules*, 10(6), 938. https://doi.org/10.3390/biom10060938
+
+A `CITATION.cff` file is included in this repository for automated citation tools.
+
+## License
+
+This software is released under the [MIT License](LICENSE). Use, modification, and redistribution are permitted with attribution. Derivative works must retain the copyright notice and license text.
+
+## Reuse and Derivative Works
+
+If you adapt CoRNeA for a new application or domain, please:
+1. Retain the copyright notice and MIT License in any redistributed code.
+2. Cite the original publication (above) in any resulting manuscripts.
+3. Acknowledge the source repository (https://github.com/krits04/cornea) in your README.
+4. Clearly document any modifications made to the original pipeline.
+
+---
+
+
