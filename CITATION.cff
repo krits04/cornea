@@ -1,0 +1,44 @@
+cff-version: 1.2.0
+message: "If you use CoRNeA or any of its components (feature extraction modules, environmental feature convolution, conditional mutual information algorithm, or network analysis pipeline) in your work, please cite both the software and the original publication below."
+title: "CoRNeA: A Pipeline to Decrypt the Inter-Protein Interfaces from Amino Acid Sequence Information"
+authors:
+  - family-names: "Chopra"
+    given-names: "Kriti"
+    email: "krits04@gmail.com"
+  - family-names: "Burdak"
+    given-names: "Bhawna"
+  - family-names: "Sharma"
+    given-names: "Kaushal"
+  - family-names: "Kembhavi"
+    given-names: "Ajit"
+  - family-names: "Mande"
+    given-names: "Shekhar C."
+  - family-names: "Chauhan"
+    given-names: "Radha"
+repository-code: "https://github.com/krits04/cornea"
+license: MIT
+type: software
+preferred-citation:
+  type: article
+  title: "CoRNeA: A Pipeline to Decrypt the Inter-Protein Interfaces from Amino Acid Sequence Information"
+  authors:
+    - family-names: "Chopra"
+      given-names: "Kriti"
+    - family-names: "Burdak"
+      given-names: "Bhawna"
+    - family-names: "Sharma"
+      given-names: "Kaushal"
+    - family-names: "Kembhavi"
+      given-names: "Ajit"
+    - family-names: "Mande"
+      given-names: "Shekhar C."
+    - family-names: "Chauhan"
+      given-names: "Radha"
+  journal: "Biomolecules"
+  year: 2020
+  month: 6
+  volume: 10
+  issue: 6
+  start: 938
+  doi: "10.3390/biom10060938"
+  url: "https://www.mdpi.com/2218-273X/10/6/938"
